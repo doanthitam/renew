@@ -1,0 +1,23 @@
+body,
+td,
+th,
+input,
+textarea {
+  font-family: $font-web;
+}
+
+.container {
+  min-width: 1280px;
+}
+.row {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+p {
+  font-size: 12px;
+  line-height: 24px;
+}
+img {
+  width: 100%;
+}

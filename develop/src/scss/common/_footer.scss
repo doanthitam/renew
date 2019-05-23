@@ -1,0 +1,85 @@
+//
+// footer
+//------------------------------------------------------------------------
+
+footer {
+  background: #31b487;
+  padding: 33px 0 41px;
+  width: 100%;
+  position: relative;
+  &.row {
+    position: relative;
+    z-index: 1;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    background: url('../../images/bl_corner.png');
+    width: 504px;
+    height: 337px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .foo_nav {
+    ul {
+      &::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      li {
+        float: left;
+        padding: 0 15px 0 15px;
+        border-right: 2px solid rgba(255,255,255,0.1);
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+          border-right: 0;
+        }
+        a {
+          text-decoration: none;
+          color: #000;
+          font-size: $p;
+          font-family: $font-web;
+          line-height: 16px;
+          font-weight: bold;
+          color: #fff;
+          display: block;
+          transition: all 0.3s ease;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+  .foo_des {
+    margin-top: 40px;
+    &::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    p {
+      font-size: 12px;
+      color: #fff;
+    }
+    .f_left {
+      float: left;
+      margin-top: 29px;
+    }
+    .f_right {
+      float: right;
+      position: relative;
+      z-index: 1;
+      span {
+        width: calc(648px / 2);
+        display: block;
+        margin-top: 16px;
+      }
+    }
+  }
+}

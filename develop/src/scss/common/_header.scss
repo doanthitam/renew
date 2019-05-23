@@ -1,0 +1,98 @@
+//
+// header
+//------------------------------------------------------------------------
+@charset "utf-8";
+header {
+  .main_header {
+    display: flex;
+    .top {
+      h1 {
+        font-size: 0;
+        width: 312px;
+        margin: 42px 204px 0 0;
+        a {
+          display: block;
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      ul {
+        display: flex;
+        margin: 58px 0 0 0;
+        li {
+          padding: 0 14px 0 26px;
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding: 0 0 0 40px;
+            margin-top: -4px;
+          }
+          a:not(.header_contact){
+            font-size: $p;
+            font-family: $font-web;
+            font-style: normal;
+            color: #000;
+            display: block;
+            transition: all .3s ease-out;
+            span{
+              display: inline-block;
+              transform: translateY(0);
+              opacity: 1;
+              transition: all 0.3s ease;
+              position: relative;
+              &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                top: 7px;
+                left: -16px;
+                width: 7px;
+                height: 7px;
+                border-top: 1px solid #000;
+                border-right: 1px solid #000;
+                transform: rotate(45deg);
+              }
+            }
+            &:hover{
+              opacity: 0.5;
+            }
+          }
+          .header_contact {
+            font-size: 12px;
+            padding-left: 9px;
+            width: 180px;
+            height: 31px;
+            line-height: 31px;
+            border-radius: 3px;
+            display: block;
+            background: #ededed;
+            position: relative;
+            text-align: center;
+            color: #000;
+            text-decoration: none;
+            &:hover {
+              opacity: 0.5;
+            }
+            ::before {
+              content: "";
+              position: absolute;
+              background: url('../../images/contact_icon_02.png')no-repeat;
+              width: 16px;
+              height: 12px;
+              top: 50%;
+              transform: translate(0 , -50%);
+              left: 36px;
+              background-size: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}
