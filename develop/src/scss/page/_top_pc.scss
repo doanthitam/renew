@@ -1,0 +1,200 @@
+//
+// PAGE Top
+//------------------------------------------------------------------------
+@charset "utf-8";
+.header {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  background: #fff;
+  right: 0;
+  top: 0;
+  .right {
+    background: #fff;
+    position: relative;
+    padding: 40px 0 0;
+    .menu_btn {
+      position: relative;
+      width: 29px;
+      height: 28px;
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      margin: 0 auto;
+      cursor: pointer;
+      span {
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        background: #000;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: 11px;
+        }
+        &:nth-child(3) {
+          top: 22px;
+        }
+      }
+    }
+    .logo {
+      width: 64px;
+      margin: 187px auto 97px;
+    }
+    p {
+      writing-mode: vertical-rl;
+      line-height: 48px;
+      font-size: 24px;
+      padding: 0 66px;
+      font-weight: 600;
+    }
+  }
+}
+main {
+  .firstview {
+    .scroll {
+      bottom: 57px;
+      right: 281px;
+      position: fixed;
+      span {
+        font-size: 20px;
+        position: relative;
+        border: 1px solid #fff;
+        padding: 15px 22px 31px 19px;
+        color: #fff;
+        font-weight: bold;
+        &:after {
+          content: "";
+          width: 20px;
+          height: 18px;
+          position: absolute;
+          border-bottom: 3px solid #fff;
+          border-right: 3px solid #fff;
+          transform: rotate(45deg);
+          bottom: 15px;
+          left: 41px;
+        }
+      }
+    }
+  }
+  .main_content {
+    position: relative;
+    background: #fff;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .cont_r {
+      float: right;
+      width: 450px;
+      padding: 123px 20px 0;
+      text-align: center;
+      section {
+        padding-bottom: 77px;
+        h2 {
+          font-size: 35px;
+          font-weight: 600;
+          margin: 15px 0 -17px;
+          overflow: hidden;
+          &:before, &:after {
+            background-color: #000;
+            content: "";
+            display: inline-block;
+            height: 1px;
+            position: relative;
+            vertical-align: middle;
+            width: 50%;
+          }
+          &:before {
+            right: 7px;
+          }
+          &:after {
+            left: 7px;
+            margin-top: -129px;
+          }
+          em {
+            font-family: "Yugothic";
+            font-style: normal;
+          }
+          span {
+            display: block;
+            font-size: 11px;
+            line-height: 24px;
+            font-weight: normal;
+            margin-top: 4px;
+          }
+        }
+        figure {
+          margin: 0 auto;
+        }
+      }
+      .branding {
+        figure {
+          width: 299px;
+        }
+        h2 {
+          &:before {
+            margin-left: -50%
+          }
+          &:after {
+            margin-right: -80%;
+          }
+        }
+      }
+      .web {
+        figure {
+          width: 295px;
+        }
+        h2 {
+          &:before {
+            margin-left: -50%
+          }
+          &:after {
+            margin-right: -65%;
+            left: 7px;
+          }
+        }
+      }
+      .design {
+        figure {
+          width: 286px;
+        }
+        h2 {
+          &:before {
+            margin-left: -50%
+          }
+          &:after {
+            left: 16px;
+            margin-right: -104%;
+          }
+        }
+      }
+      .advertising {
+        figure {
+          width: 305px;
+        }
+        h2 {
+          &:before {
+            margin-left: -50%
+          }
+          &:after {
+            margin-right: -87%;
+          }
+        }
+      }
+    }
+    .sub_img {
+      float: left;
+      width: calc(100% - 450px);
+      figure {
+        margin-top: -4px;
+        width: 100%;
+      }
+    }
+  }
+}

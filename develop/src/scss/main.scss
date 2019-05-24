@@ -32,4 +32,11 @@
 // @import "layout/responsive";
 
 // 6. Page-specific styles
-@import "page/top";
+
+
+@media screen and (min-width: 768px), print {
+  @import "page/top_pc";
+}
+@media screen and (max-width: 768px) {
+  @import "page/top_pc";
+}
