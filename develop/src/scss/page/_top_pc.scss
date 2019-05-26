@@ -92,10 +92,10 @@ main {
     .cont_r {
       float: right;
       width: 450px;
-      padding: 123px 20px 0;
+      padding: percentage(123/1440) 20px 0;
       text-align: center;
       section {
-        padding-bottom: 77px;
+        padding-bottom: percentage(73/1440);
         h2 {
           font-size: 35px;
           font-weight: 600;

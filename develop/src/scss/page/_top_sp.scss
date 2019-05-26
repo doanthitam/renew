@@ -6,12 +6,141 @@
 }
 .header {
   .right {
+    padding: percentage(32/565) 0;
     .menu_btn {
-
+      position: relative;
+      width: percentage(37/565);
+      height: percentage(35/565);
+      transform: rotate(0deg);
+      transition: .5s ease-in-out;
+      margin: 0 auto;
+      cursor: pointer;
+      span {
+        position: absolute;
+        height: percentage(5/565);
+        width: 100%;
+        background: #000;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: percentage(10/565);
+        }
+        &:nth-child(3) {
+          top: percentage(25/565);
+        }
+      }
     }
     .logo {
       width: percentage(80/565);
       margin: 0 auto;
+    }
+    p{
+      font-size: 23px;
+      text-align: center;
+      margin: percentage(135/565) 0 percentage(132/565);
+    }
+  }
+}
+.main_content {
+  .cont_r {
+    text-align: center;
+    section {
+      padding-bottom: 77px;
+      h2 {
+        font-size: 35px;
+        font-weight: 600;
+        margin: 15px 0 -17px;
+        overflow: hidden;
+        &:before, &:after {
+          background-color: #000;
+          content: "";
+          display: inline-block;
+          height: 1px;
+          position: relative;
+          vertical-align: middle;
+          width: 50%;
+        }
+        &:before {
+          right: 7px;
+        }
+        &:after {
+          left: 7px;
+          margin-top: -129px;
+        }
+        em {
+          font-family: "Yugothic";
+          font-style: normal;
+        }
+        span {
+          display: block;
+          font-size: 11px;
+          line-height: 24px;
+          font-weight: normal;
+          margin-top: 4px;
+        }
+      }
+      figure {
+        margin: 0 auto;
+      }
+    }
+    .branding {
+      figure {
+        width: 299px;
+      }
+      h2 {
+        &:before {
+          margin-left: -50%
+        }
+        &:after {
+          margin-right: -80%;
+        }
+      }
+    }
+    .web {
+      figure {
+        width: 295px;
+      }
+      h2 {
+        &:before {
+          margin-left: -50%
+        }
+        &:after {
+          margin-right: -65%;
+          left: 7px;
+        }
+      }
+    }
+    .design {
+      figure {
+        width: 286px;
+      }
+      h2 {
+        &:before {
+          margin-left: -50%
+        }
+        &:after {
+          left: 16px;
+          margin-right: -104%;
+        }
+      }
+    }
+    .advertising {
+      figure {
+        width: 305px;
+      }
+      h2 {
+        &:before {
+          margin-left: -50%
+        }
+        &:after {
+          margin-right: -87%;
+        }
+      }
     }
   }
 }
