@@ -4,55 +4,14 @@
   width: 100%;
   position: relative;
 }
-.header {
-  .right {
-    padding: percentage(32/565) 0;
-    .menu_btn {
-      position: relative;
-      width: percentage(37/565);
-      height: percentage(35/565);
-      transform: rotate(0deg);
-      transition: .5s ease-in-out;
-      margin: 0 auto;
-      cursor: pointer;
-      span {
-        position: absolute;
-        height: percentage(5/565);
-        width: 100%;
-        background: #000;
-        opacity: 1;
-        left: 0;
-        transform: rotate(0deg);
-        transition: .25s ease-in-out;
-        &:nth-child(1) {
-          top: 0;
-        }
-        &:nth-child(2) {
-          top: percentage(10/565);
-        }
-        &:nth-child(3) {
-          top: percentage(25/565);
-        }
-      }
-    }
-    .logo {
-      width: percentage(80/565);
-      margin: 0 auto;
-    }
-    p{
-      font-size: 23px;
-      text-align: center;
-      margin: percentage(135/565) 0 percentage(132/565);
-    }
-  }
-}
 .main_content {
+  padding: 85px 25px 0;
   .cont_r {
     text-align: center;
     section {
       padding-bottom: 77px;
       h2 {
-        font-size: 35px;
+        font-size: 22px;
         font-weight: 600;
         margin: 15px 0 -17px;
         overflow: hidden;
@@ -70,7 +29,7 @@
         }
         &:after {
           left: 7px;
-          margin-top: -129px;
+          margin-top: -133px;
         }
         em {
           font-family: "Yugothic";
@@ -82,6 +41,10 @@
           line-height: 24px;
           font-weight: normal;
           margin-top: 4px;
+          font-weight: bold;
+        }
+        p {
+          font-size: 12px;
         }
       }
       figure {
@@ -97,7 +60,8 @@
           margin-left: -50%
         }
         &:after {
-          margin-right: -80%;
+          margin-right: -72%;
+          margin-top: -109px;
         }
       }
     }
@@ -110,7 +74,8 @@
           margin-left: -50%
         }
         &:after {
-          margin-right: -65%;
+          margin-right: -61%;
+          margin-top: -108px;
           left: 7px;
         }
       }
@@ -125,7 +90,8 @@
         }
         &:after {
           left: 16px;
-          margin-right: -104%;
+          margin-right: -89%;
+          margin-top: -115px;
         }
       }
     }
@@ -138,7 +104,8 @@
           margin-left: -50%
         }
         &:after {
-          margin-right: -87%;
+          margin-right: -79%;
+          margin-top: -108px;
         }
       }
     }

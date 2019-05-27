@@ -21,10 +21,12 @@
         <!-- <div class="show_sp">
         </div> -->
         <div class="right">
-          <div class="menu_btn">
-            <span></span>
-            <span></span>
-            <span></span>
+          <div class="cv_menu">
+            <div class="menu_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
           <h1 class="logo">
             <img class="resimg" src="../images/logo_pc.png" alt="jiik">
@@ -99,36 +101,36 @@
       </footer>
     </div>
     <!-- <script src="../js/libs.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
-    <!-- <script src="../js/main.js"></script> -->
-    <script>
-     $(function () {
-       var isClosed = false;
-            var autoCloseTimer = false;
-            setTimeout(addScrollListener, 5000);
-
-            function addScrollListener() {
-                window.addEventListener('scroll', function () {
-                    clearTimeout(autoCloseTimer);
-                    if (isClosed || window.pageYOffset > window.innerHeight * .5) {
-                        if (isClosed) {
-                            isClosed = false;
-                            $('.cont_r').animate({ opacity: 0 }, 400, function () {
-                                $(this).css({
-                                    opacity: 1,
-                                    top: 0
-                                });
-                            });
-                         }
-                        $('.cont_r').addClass('isOpen');
-                        autoCloseTimer = setTimeout(autoClose, 8000);
-                    } else {
-                        $('.cont_r').removeClass('isOpen');
-                    }
-                }
+    <!-- <script src="../js/libs.js"></script> -->
+    <!-- <script>
+      Query(document).ready(function() {
+        var isClosed = false;
+        var autoCloseTimer = false;
+        setTimeout(addScrollListener, 5000);
+        function addScrollListener() {
+          window.addEventListener('scroll', function () {
+            clearTimeout(autoCloseTimer);
+              if (isClosed || window.pageYOffset > window.innerHeight * .5) {
+                if (isClosed) {
+                  isClosed = false;
+                    $('.cont_r').animate({ opacity: 0 }, 400, function () {
+                      $(this).css({
+                        opacity: 1,
+                        top: 0
+                       });
+                    });
+                  }
+                  $('.cont_r').addClass('isOpen');
+                  autoCloseTimer = setTimeout(autoClose, 8000);
+                  else {
+                  $('.cont_r').removeClass('isOpen');
+                  }
+              }
             }
+          }
       });
-
-    </script>
+      console.log(.cont_r);
+    </script> -->
+    <!-- // <script src="../js/main.js"></script> -->
   </body>
 </html>

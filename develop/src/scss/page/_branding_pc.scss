@@ -1,0 +1,83 @@
+.branding {
+  font-family: "Yugothic";
+  padding-left: 47px;
+  .row {
+    padding: 0 29px 0 31px;
+  }
+  .block_01 {
+    &:after {
+      content:"";
+      display: block;
+      clear: both;
+    }
+    .branding_intro {
+      width: 571px;
+      &:nth-of-type(1){
+        float: left;
+        h2 {
+          font-size: 45px;
+          margin: 144px 0 112px;
+          font-family: $font-web;
+          span {
+            display: block;
+            font-size: 15px;
+            border-top: 1px solid #000;
+            margin-top: 5px;
+            padding-top: 8px;
+            margin-right: -55px;
+          }
+        }
+        figure {
+          width: 532px;
+          margin: 0 auto;
+        }
+      }
+      &:nth-of-type(2) {
+        float: right;
+        .branding_quotes {
+          background: #ffe000;
+          height: 448px;
+          padding: 358px 0 305px;
+          p {
+            font-size: 22.5px;
+            font-weight: bold;
+            padding-left: 57px;
+            margin-top: -161px;
+            padding-top: 159px;
+            border-top: 1px solid #000;
+            margin-right: -25px;
+            span {
+              font-size: 14px;
+              display: block;
+              font-weight: bold;
+              margin: 13px 0 33px;
+            }
+            em {
+              font-style: normal;
+              display: block;
+              font-size: 14.52px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .branding_des {
+        margin-top: 84px;
+        h3 {
+          font-size: 18px;
+          font-weight: bold;
+        }
+        p {
+          font-size: 14px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+  .block_02 {
+    figure {
+      width: 936px;
+      margin: 0 auto;
+    }
+  }
+}

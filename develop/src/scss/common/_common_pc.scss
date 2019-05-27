@@ -6,13 +6,10 @@ textarea {
   font-family: $font-web;
 }
 
-.container {
-  min-width: 1280px;
-}
+
 .row {
-  max-width: 1280px;
+  max-width: calc(100% - 150px);
   width: 100%;
-  margin: 0 auto;
 }
 p {
   font-size: 12px;
