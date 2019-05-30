@@ -46,6 +46,9 @@ main {
       width: 450px;
       padding: percentage(123/1440) 20px 0;
       text-align: center;
+      &.isOpen {
+        width: 600px;
+      }
       section {
         padding-bottom: percentage(73/1440);
         h2 {

@@ -2,7 +2,8 @@
 // header
 //------------------------------------------------------------------------
 @charset "utf-8";
-.header {
+header {
+  width: 100%;
   position: fixed;
   width: 150px;
   height: 100%;
@@ -40,6 +41,27 @@
           top: 22px;
         }
       }
+      &.open {
+        span {
+          &:nth-child(1) {
+            top: 10px;
+            transform: rotate(135deg);
+            transition: .7s ease;
+            background: #000;
+          }
+          &:nth-child(2) {
+            opacity: 0;
+            right: 100px;
+            background: #000;
+          }
+          &:nth-child(3) {
+            top: 10px;
+            transform: rotate(-135deg);
+            transition: .7s ease;
+            background: #000;
+          }
+        }
+      }
     }
     .logo {
       width: 64px;
@@ -53,4 +75,34 @@
       font-weight: 600;
     }
   }
+}
+.cv_nav {
+  display: none;
+  background: #000;
+  color: #fff;
+  font-weight: 400;
+  font-size: 40px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
+}
+.hidden {
+  opacity: 0;
+  transition-delay: .5s;
+  pointer-events: none;
+  cursor: default;
+}
+.visible {
+  opacity: 1;
+}
+.slideInLeft {
+  animation-duration: .5s;
+}
+.slideOutLeft {
+  animation-duration: .5s;
 }
