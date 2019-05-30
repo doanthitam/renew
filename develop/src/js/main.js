@@ -27,21 +27,25 @@ $(function() {
   });
 //scroll//
 
-  function addScrollListener() {
-      window.addEventListener('scroll', function () {
-          clearTimeout(autoCloseTimer);
-          if (isClosed || window.pageYOffset > window.innerHeight * .5) {
-              $('.cont_r').addClass('isOpen');
-              autoCloseTimer = setTimeout(autoClose, 8000);
-          } else {
-              $('.cont_r').removeClass('isOpen');
-          }
-      }, supportsPassive ? { passive: true } : false);
-  }
+      $(window).scroll(function(){
+          var heightcont = $('.cont_r').outerHeight()
+          var heightwindown = $( window ).height()
+          var heightscreen = heightcont - heightwindown
 
-  function autoClose() {
-      isClosed = true;
-      $('.cont_r').removeClass('isOpen');
-  }
+          console.log('hh', heightscreen)
+          console.log('sc', $(this).scrollTop())
+          if($(this).scrollTop() > 50) {
+            $('#header').hide();
+            $('.cont_r').addClass('opencontent')
+          } else {
+            $('.cont_r').removeClass('opencontent')
+            $('#header').show();
+          }
+          if($(this).scrollTop() > heightscreen) {
+            $('.cont_r').addClass('opencontent1')
+          } else {
+            $('.cont_r').removeClass('opencontent1')
+          }
+      });
 
 });
