@@ -31,6 +31,27 @@
           top: 25px;
         }
       }
+      &.open {
+        span {
+          &:nth-child(1) {
+            top: 10px;
+            transform: rotate(135deg);
+            transition: .7s ease;
+            background: #000;
+          }
+          &:nth-child(2) {
+            opacity: 0;
+            right: 100px;
+            background: #000;
+          }
+          &:nth-child(3) {
+            top: 10px;
+            transform: rotate(-135deg);
+            transition: .7s ease;
+            background: #000;
+          }
+        }
+      }
     }
     .logo {
       width: percentage(80/565);
@@ -40,6 +61,32 @@
       font-size: 23px;
       text-align: center;
       margin: percentage(135/565) 0 percentage(132/565);
+    }
+  }
+  .cv_nav {
+    display: none;
+  }
+  .hidden {
+    opacity: 0;
+    transition: .5s ease-in-out;
+    pointer-events: none;
+    cursor: default;
+  }
+  .visible {
+    opacity: 1;
+    transition: .5s ease-in-out;
+    nav {
+      text-align: center;
+      background: #000;
+      color: #fff;
+      font-weight: 400;
+      font-size: 40px;
+      width: 100%;
+      ul {
+        li {
+          text-decoration: none;
+        }
+      }
     }
   }
 }

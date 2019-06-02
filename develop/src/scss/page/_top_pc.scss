@@ -35,15 +35,15 @@ main {
       }
     }
     .cont_r {
-      padding-top: 190px;
       display: none;
       width: 150px;
-      position: absolute;
+      position: fixed;
       right: 0;
       top: 0;
       text-align: center;
       opacity: 0;
       transition: all .75s ease;
+      overflow: hidden;
       &.opencontent {
         display: block;
         width: 450px;
@@ -52,6 +52,12 @@ main {
         section {
           opacity: 1;
         }
+      }
+      .scroll_cont {
+        overflow-y: scroll;
+        width: 100%;
+        height: 100vh;
+        padding-right: 17px;
       }
       section {
         padding-bottom: percentage(73/1440);
