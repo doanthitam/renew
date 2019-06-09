@@ -11,6 +11,7 @@ const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
 const autoprefixer = require('gulp-autoprefixer');
+const gulpCopy = require('gulp-copy');
 
 const reload = browserSync.reload;
 
@@ -76,6 +77,11 @@ gulp.task('images', () => {
     .pipe(gulp.dest(config.buildImg));
 });
 
+gulp.task('html', () => {
+  gulp.src(['./src/html/*.*'])
+    .pipe(gulpCopy('build/', { prefix: 2 }));
+});
+
 // - Create server
 gulp.task('browser-sync', () => {
   browserSync.init(['build/css/*.css', 'build/js/*.js'], {
@@ -99,4 +105,4 @@ gulp.task('watch', () => {
 });
 
 // - Build
-gulp.task('default', ['styles', 'scripts', 'images', 'browser-sync', 'watch']);
+gulp.task('default', ['styles', 'scripts', 'images', 'html', 'browser-sync', 'watch']);
