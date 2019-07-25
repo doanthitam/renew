@@ -13,20 +13,12 @@
 @import "base/normalize";
 //@import "base/font";
 
-// 4. Components
-//@import "components/functions";
-//@import "components/modal";
-//@import "components/form";
-//@import "components/modules";
-// @import "components/button";
-// @import "components/icon";
-//@import "components/table";
-// @import "components/form";
-// @import "components/modal";
 
 // 5. Layout-related sections
 @import "common/footer";
 @import "common/common_pc";
+@import "vendor/slick";
+@import "vendor/slick-theme";
 // @import "layout/sidebar";
 // @import "layout/responsive";
 

@@ -40,4 +40,23 @@ $(function() {
         $('#header').show();
       }
   });
+
+	//slick
+	$('.Slider').slick({
+		autoplay: true,
+		autoplaySpeed: 3000,
+		dots: true,
+		arrows: false,
+		speed: 2000,
+		fade: true,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		pauseOnDotsHover: false,
+	});
+
+	/* ニューススライドショー */
+	$('.Slider').slick({
+		cssEase: 'ease-out',
+		speed: 500,
+	});
 });

@@ -6,6 +6,39 @@ main {
   .firstview {
     position: relative;
     z-index: 10;
+    &_inner {
+      position: absolute;
+      background: rgba(255,255,255, 0.8);
+      width: 26%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      padding: 96px 0;
+      h2 {
+        font-size: 49px;
+        line-height: 94px;
+        color: #505050;
+        margin-bottom: 80px;
+        text-align: center;
+        .pink {
+          color: #ef8be2;
+        }
+      }
+      .jp_txt {
+        padding: 0 40px;
+        text-align: center;
+        p {
+          font-weight: bold;
+          color: #505050;
+          font-size: 18px;
+          line-height: 28px;
+          font-family: "Yugothic";
+          &:not(:last-child) {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
     .scroll {
       bottom: 33px;
       right: 181px;
@@ -158,115 +191,6 @@ main {
   .main_content {
     position: relative;
     background: #fff;
-    // .cont_r {
-    //   width: 150px;
-    //   position: fixed;
-    //   right: 0;
-    //   top: 0;
-    //   padding: percentage(123/1440) 20px 0;
-    //   text-align: center;
-    //   &.opencontent {
-    //     width: 600px;
-    //     opacity: 1;
-    //     section {
-    //       opacity: 1;
-    //     }
-    //   }
-    //   section {
-    //     padding-bottom: percentage(73/1440);
-    //     opacity:0;
-    //     h2 {
-    //       font-size: 35px;
-    //       font-weight: 600;
-    //       margin: 15px 0 -17px;
-    //       overflow: hidden;
-    //       &:before, &:after {
-    //         background-color: #000;
-    //         content: "";
-    //         display: inline-block;
-    //         height: 1px;
-    //         position: relative;
-    //         vertical-align: middle;
-    //         width: 50%;
-    //       }
-    //       &:before {
-    //         right: 7px;
-    //       }
-    //       &:after {
-    //         left: 7px;
-    //         margin-top: -129px;
-    //       }
-    //       em {
-    //         font-family: "Yugothic";
-    //         font-style: normal;
-    //       }
-    //       span {
-    //         display: block;
-    //         font-size: 11px;
-    //         line-height: 24px;
-    //         font-weight: normal;
-    //         margin-top: 4px;
-    //       }
-    //     }
-    //     figure {
-    //       margin: 0 auto;
-    //     }
-    //   }
-    //   .branding {
-    //     figure {
-    //       width: 299px;
-    //     }
-    //     h2 {
-    //       &:before {
-    //         margin-left: -50%
-    //       }
-    //       &:after {
-    //         margin-right: -80%;
-    //       }
-    //     }
-    //   }
-    //   .web {
-    //     figure {
-    //       width: 295px;
-    //     }
-    //     h2 {
-    //       &:before {
-    //         margin-left: -50%
-    //       }
-    //       &:after {
-    //         margin-right: -65%;
-    //         left: 7px;
-    //       }
-    //     }
-    //   }
-    //   .design {
-    //     figure {
-    //       width: 286px;
-    //     }
-    //     h2 {
-    //       &:before {
-    //         margin-left: -50%
-    //       }
-    //       &:after {
-    //         left: 16px;
-    //         margin-right: -104%;
-    //       }
-    //     }
-    //   }
-    //   .advertising {
-    //     figure {
-    //       width: 305px;
-    //     }
-    //     h2 {
-    //       &:before {
-    //         margin-left: -50%
-    //       }
-    //       &:after {
-    //         margin-right: -87%;
-    //       }
-    //     }
-    //   }
-    // }
     .sub_img {
       width: 100%;
       figure {
