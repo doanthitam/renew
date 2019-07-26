@@ -55,11 +55,9 @@
     .branding_intro {
       width: 50%;
       &:nth-of-type(1){
-        float: left;
         h2 {
           font-size: 45px;
           margin: 144px 0 112px;
-          font-family: $font-web;
           span {
             display: block;
             font-size: 15px;
@@ -77,57 +75,30 @@
           margin: 83px 0 0 28px;
         }
       }
-      &:nth-of-type(2) {
-        float: right;
-        .branding_quotes {
-          background: #ffe000;
-          height: 448px;
-          padding: 358px 0 305px;
-          margin-left: 20px;
-          p {
-            font-size: 22.5px;
-            font-weight: bold;
-            padding-left: 57px;
-            margin-top: -161px;
-            padding-top: 159px;
-            border-top: 1px solid #000;
-            margin-right: -160px;
-            padding-right: 185px;
-            span {
-              font-size: 14px;
-              display: block;
-              font-weight: bold;
-              margin: 13px 0 33px;
-            }
-            em {
-              font-style: normal;
-              display: block;
-              font-size: 14.52px;
-              font-weight: bold;
-            }
-          }
-        }
-      }
       .branding_des {
         margin: 91px 0 0 47px;
         h3 {
           font-size: 18px;
           font-weight: bold;
-          border-bottom: 2px solid #8c8c8c;
-          margin-left: -27px;
           padding: 0 0 14px 47px;
           margin-right: 20px;
         }
         p {
           font-size: 14px;
           line-height: 30px;
-          border-left: 2px solid #8c8c8c;
-          margin-top: -52px;
           padding: 71px 17px 17px 21px;
         }
       }
     }
+    .web_inner {
+      height: 637px;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
   }
+
   .block_02 {
     padding: 5px 0 88px;
     counter-reset: dt;
