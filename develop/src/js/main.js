@@ -27,10 +27,9 @@ $(function() {
   });
 	//scroll//
 	$(window).scroll(function(){
-		var ha = ( $('.firstview').offset().top + $('.firstview').height());
 			if ( $(window).scrollTop() >  200 ) {
-				$('#header').hide(300);
-				$(".cont_r").show(1000);
+				$('#header').hide();
+				$(".cont_r").show();
 				$('.cont_r').addClass('opencontent');
 			} else {
 				$('.cont_r').removeClass('opencontent');
